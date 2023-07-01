@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSecondary"
+    tools:context=".view.fragments.MessagesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_gravity="center"
+            app:civ_border_width="@dimen/_1sdp"
+            android:padding="13dp"
+            app:civ_border_color="@color/colorTextPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:paddingLeft="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajay Kumar"
+                android:textSize="22sp"
+                android:textColor="@color/colorTextPrimary"/>
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 July 2023 04:55 PM"
+                android:textSize="18sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/colorTextPrimary"/>
+
+            <TextView
+                android:id="@+id/tvOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sent OTP: 252985"
+                android:textSize="18sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/colorTextPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

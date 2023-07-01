@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".view.SendMessageActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi. Your OTP is: "
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/tvSendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="854796"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15sdp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btSendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:backgroundTint="@color/colorTextPrimary"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>

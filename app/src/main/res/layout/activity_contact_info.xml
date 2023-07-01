@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="top"
+    android:padding="10dp"
+    tools:context=".view.ContactInfoActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civContactInfo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_gravity="center"
+        app:civ_border_width="@dimen/_1sdp"
+        android:padding="13dp"
+        android:layout_marginTop="100dp"
+        app:civ_border_color="@color/colorTextPrimary"/>
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajay Kumar"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_gravity="center"
+        android:padding="@dimen/_4sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        android:textColor="#BE13B298"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:backgroundTint="#52C2DFDC"
+        android:paddingVertical="20dp"
+        >
+        <TextView
+            android:id="@+id/tvContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7717788236"
+            android:textSize="18sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_gravity="center"
+
+            android:padding="@dimen/_4sdp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:backgroundTint="@color/colorTextPrimary"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
